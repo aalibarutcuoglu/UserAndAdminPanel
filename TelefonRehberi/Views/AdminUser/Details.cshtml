@@ -1,0 +1,43 @@
+﻿@model TelefonRehberi.Models.Entities.Login
+
+
+@{
+    ViewBag.Title = "Detay";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>AdminUser</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfrimPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfrimPassword)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Listeye Geri Dön", "Index")
+</p>
