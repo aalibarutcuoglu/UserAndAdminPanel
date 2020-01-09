@@ -174,13 +174,11 @@
     <Content Include="Views\PublicUI\Index.cshtml" />
     <Content Include="Views\AdminUser\Create.cshtml" />
     <Content Include="Views\AdminUser\Delete.cshtml" />
-    <Content Include="Views\AdminUser\Details.cshtml" />
     <Content Include="Views\AdminUser\Edit.cshtml" />
     <Content Include="Views\AdminUser\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Departman\Create.cshtml" />
     <Content Include="Views\Departman\Delete.cshtml" />
-    <Content Include="Views\Departman\Details.cshtml" />
     <Content Include="Views\Departman\Edit.cshtml" />
     <Content Include="Views\Departman\Index.cshtml" />
   </ItemGroup>

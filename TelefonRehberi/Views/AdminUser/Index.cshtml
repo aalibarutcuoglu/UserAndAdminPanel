@@ -17,9 +17,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Password)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ConfrimPassword)
-        </th>
+        
         <th></th>
     </tr>
 
@@ -31,12 +29,9 @@
         <td>
             @Html.DisplayFor(modelItem => item.Password)
         </td>
+       
         <td>
-            @Html.DisplayFor(modelItem => item.ConfrimPassword)
-        </td>
-        <td>
-            @Html.ActionLink("Düzenle", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Detay", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Düzenle", "Edit", new { id=item.Id }) |            
             @Html.ActionLink("Sil", "Delete", new { id=item.Id })
         </td>
     </tr>

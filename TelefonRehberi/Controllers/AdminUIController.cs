@@ -86,7 +86,7 @@ namespace TelefonRehberi.Controllers
             Calisan calisan = db.Calisanlar.Find(id);
             if (calisan == null)
             {
-                return HttpNotFound();
+                return HttpNotFound(); //Güncelleme işleminin gerçekleşmeyeceği durumda sayfayı 404'e düşürdüm.
             }
             return View(calisan);
         }
@@ -116,15 +116,15 @@ namespace TelefonRehberi.Controllers
 
             if (calisan == null)
             {
-                return HttpNotFound();
+                return HttpNotFound();//Calisan id null olduğu takdirde 404'e sayfayı 404'e düşürdüm
             }
 
             var isYonetici = db.Calisanlar.Any(c => c.Yonetici.Id == id);
 
             if (isYonetici)
             {
-                //hata
-                return HttpNotFound();
+                
+                return HttpNotFound();//Silme işleminin gerçekleşmeyeceği durumda sayfayı 404'e düşürdüm
             }
 
             return View(calisan);
