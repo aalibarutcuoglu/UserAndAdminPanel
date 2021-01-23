@@ -19,6 +19,7 @@ namespace TelefonRehberi.Controllers
 
         public ActionResult Home()
         {
+            //Home Index
             return View();
         }
 
